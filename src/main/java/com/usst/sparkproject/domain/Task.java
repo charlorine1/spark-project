@@ -68,6 +68,12 @@ public class Task implements Serializable{
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
+	@Override
+	public String toString() {
+		return "Task [taskid=" + taskid + ", taskName=" + taskName + ", createTime=" + createTime + ", startTime="
+				+ startTime + ", finishTime=" + finishTime + ", taskType=" + taskType + ", taskStatus=" + taskStatus
+				+ ", taskParam=" + taskParam + "]";
+	}
 	
 
 }

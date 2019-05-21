@@ -6,7 +6,7 @@ import com.usst.sparkproject.dao.ITaskDAO;
 import com.usst.sparkproject.domain.Task;
 import com.usst.sparkproject.jdbc.JDBCHelper;
 
-public class ITaskDAOImpl implements ITaskDAO{
+public class TaskDAOImpl implements ITaskDAO{
 
 	/**
 	 * 根据主键查询任务
