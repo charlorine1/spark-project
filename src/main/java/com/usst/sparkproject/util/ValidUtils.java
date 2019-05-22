@@ -15,6 +15,12 @@ public class ValidUtils {
 	 * @param startParamField 起始参数字段
 	 * @param endParamField 结束参数字段
 	 * @return 校验结果
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 如果任务参数里面是空的，或者在范围内，则表示该条数据符合，返回true，否则返回false；调用该方法的地方取反返回true，则filter返回false，则过滤条
 	 */
 	public static boolean between(String data, String dataField, 
 			String parameter, String startParamField, String endParamField) {

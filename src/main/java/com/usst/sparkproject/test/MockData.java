@@ -106,6 +106,8 @@ public class MockData {
 		
 		DataFrame df = sqlContext.createDataFrame(rowsRDD, schema);
 		
+		df.show();
+		
 		df.registerTempTable("user_visit_action");  
 		for(Row _row : df.take(1)) {
 			System.out.println(_row);  
@@ -147,6 +149,7 @@ public class MockData {
 			System.out.println(_row);  
 		}
 		
+		df2.show();
 		df2.registerTempTable("user_info");  
 		
 		/**
@@ -176,7 +179,7 @@ public class MockData {
 		for(Row _row : df3.take(1)) {
 			System.out.println(_row);  
 		}
-		
+		df3.show();
 		df3.registerTempTable("product_info"); 
 	}
 	
