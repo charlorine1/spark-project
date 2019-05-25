@@ -32,11 +32,11 @@ import org.junit.Test;
 public class JdbcCRUD {
 
 	public static void main(String[] args) {
-//		insert();
+		insert();
 //		update();
 //		delete();
 //		select();
-		preparedStatement();
+	//	preparedStatement();
 	}
 	
 	/**

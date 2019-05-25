@@ -22,6 +22,8 @@ import com.usst.sparkproject.util.StringUtils;
  */
 public class SessionAggrStatAccumulator implements AccumulatorParam<String>{
 
+	private static final long serialVersionUID = 1L;
+
 	/**
 	 * zero方法，其实主要用于数据的初始化
 	 * 那么，我们这里，就返回一个值，就是初始化中，所有范围区间的数量，都是0

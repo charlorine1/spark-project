@@ -41,6 +41,7 @@ public class ParamUtils {
 	 * @return 参数
 	 */
 	public static String getParam(JSONObject jsonObject, String field) {
+		System.out.println("--------------------"+jsonObject);
 		JSONArray jsonArray = jsonObject.getJSONArray(field);
 		if(jsonArray != null && jsonArray.size() > 0) {
 			return jsonArray.getString(0);
