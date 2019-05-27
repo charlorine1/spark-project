@@ -4,7 +4,9 @@ import com.usst.sparkproject.dao.ISessionAggrStatDAO;
 import com.usst.sparkproject.dao.ISessionDetailDAO;
 import com.usst.sparkproject.dao.ISessionRandomExtractDAO;
 import com.usst.sparkproject.dao.ITaskDAO;
+import com.usst.sparkproject.dao.ITop10CategoryDAO;
 import com.usst.sparkproject.dao.impl.ISessionAggrStatDAOImpl;
+import com.usst.sparkproject.dao.impl.ITop10CategoryDAOImpl;
 import com.usst.sparkproject.dao.impl.SessionDetailDAOImpl;
 import com.usst.sparkproject.dao.impl.SessionRandomExtractDAOImpl;
 import com.usst.sparkproject.dao.impl.TaskDAOImpl;
@@ -30,5 +32,9 @@ public class DAOFactory {
 	
 	public static ISessionDetailDAO getSessionDetailDAO() {
 		return new SessionDetailDAOImpl();
+	}
+	
+	public static ITop10CategoryDAO getTop10CategoryDAO() {
+		return new ITop10CategoryDAOImpl();
 	}
 }

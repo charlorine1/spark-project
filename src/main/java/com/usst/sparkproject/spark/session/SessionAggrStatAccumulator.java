@@ -1,4 +1,4 @@
-package com.usst.sparkproject.spark;
+package com.usst.sparkproject.spark.session;
 
 
 import org.apache.spark.AccumulatorParam;
