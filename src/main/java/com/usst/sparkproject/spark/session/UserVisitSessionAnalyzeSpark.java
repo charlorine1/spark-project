@@ -82,12 +82,13 @@ public class UserVisitSessionAnalyzeSpark {
 		args = new String[] { "2" };
 
 		SparkConf conf = new SparkConf()
-				.setAppName(Constants.SPARK_APP_NAME_SESSION)
-				.setMaster("local")
+				.setAppName(Constants.SPARK_APP_NAME_SESSION);
+/*				.setMaster("local")
 				.set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
 				.registerKryoClasses(new Class[]{
 						CategorySortKey.class,
-						IntList.class});   
+						IntList.class}); */  
+		SparkUtils.setMaster(conf);
 
 		JavaSparkContext sc = new JavaSparkContext(conf);
 		SQLContext sqlContext = getSQLContext(sc.sc());
